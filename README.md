@@ -1,7 +1,7 @@
 # Gas water usage monitoring app
 
 ### Description
-Application intended to persist/retrieve das/water usage data of subscriber.
+Application intended to persist/retrieve gas/water usage data of subscriber.
 
 ### Technologies
 
@@ -32,22 +32,24 @@ Add subscriber:
      "lastName": "paaaa"
  }`
 
-add gas usage data:
+Submit gas usage data:
 `http://localhost:8080/api/update/gas/1
  {"usedGasContent":76, "submittedTime":"2020-06-25T15:56:03"}`
  
- get gas data(of subscriber):
+
+Get gas data(of subscriber):
  `http://localhost:8080/api/get/recent/gas?id=1&limit=2
   http://localhost:8080/api/get/recent/gas?id=1`
   
   
-submit water data:
+  
+Submit water data:
 
 `http://localhost:8080/api/update/water/1
  {"waterAmount":12, "submittedTime":"2020-08-25T15:56:03", "waterType":"HOT"}`
  
  
-get water data(of subscriber):
+Get water data(of subscriber):
 `http://localhost:8080/api/get/recent/water?id=1&type=COLD
  http://localhost:8080/api/get/water?id=1&type=COLD
  http://localhost:8080/api/get/water?id=1&type=COLD&limit=1`
