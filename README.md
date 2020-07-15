@@ -25,6 +25,7 @@ Run app:
 App endpoints:
 
 Add subscriber:
+
 `http://localhost:8080/api/subscriber/create
  {
      "clientId": 1,
@@ -33,15 +34,15 @@ Add subscriber:
  }`
 
 Submit gas usage data:
+
 `http://localhost:8080/api/update/gas/1
  {"usedGasContent":76, "submittedTime":"2020-06-25T15:56:03"}`
  
 
 Get gas data(of subscriber):
+
  `http://localhost:8080/api/get/recent/gas?id=1&limit=2
   http://localhost:8080/api/get/recent/gas?id=1`
-  
-  
   
 Submit water data:
 
@@ -50,6 +51,7 @@ Submit water data:
  
  
 Get water data(of subscriber):
+
 `http://localhost:8080/api/get/recent/water?id=1&type=COLD
  http://localhost:8080/api/get/water?id=1&type=COLD
  http://localhost:8080/api/get/water?id=1&type=COLD&limit=1`
