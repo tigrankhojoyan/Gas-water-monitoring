@@ -1,4 +1,4 @@
-# Gas water usage monitoring app
+# Gas & Water usage monitoring app
 
 ### Description
 Application intended to persist/retrieve gas/water usage data of subscriber.
